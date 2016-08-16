@@ -10,12 +10,18 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-		<link rel="stylesheet" href="css/main2.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="../css/main2.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+	-->
+
+	<link rel="stylesheet" href="{{ "/css/main2.css" | prepend: site.baseurl }}">	
+	<link rel="stylesheet" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">	
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">	
+	<!--TODO: change all file directory links-->
         
         
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,10 +30,19 @@
 
         {{content}}
         
+	<!--
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">	
+	-->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+        <script src="{{ "/js/plugins.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
