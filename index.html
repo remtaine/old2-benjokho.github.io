@@ -1,45 +1,60 @@
----
-layout: default
----
-<!--TODO: ADD NAVBAR-->
-<header>
-	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="/blog">Blog</a></li>
-		<li><a href="#about">About Me</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-</header>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 
-<img id="jumbotron-picture" src="#">
-<span>Hi, I'm Benjo.</span>
-<span>I'm a medical student who's into programming and web development.</span>
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
 
-<div id="my-projects">
-	<h2>My Projects</h2>
-	<ul>
-		<li><a href="#">
-			<img src="/Nature-Photography-Website">
-			<span>Project 1</span>
-		</a></li>
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
 
-		<li><a href="#">
-			<img src="#">
-			<span>Project 2</span>
-		</a></li>
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
 
-		<li><a href="#">
-			<img src="#">
-			<span>Project 3</span>
-		</a></li>
-	</ul>	
-</div>
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
 
-<div id="call-to-action">
-Like my work? <a href="#">Hire me</a>
-</div>
+        p {
+            margin: 0 auto;
+            width: 280px;
+        }
 
-<!--TODO: ADD FOOTER-->
-<footer>
-	<span class="centered">(c) NBK Productions 2016</span>
-</footer>
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Page Not Found</h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
